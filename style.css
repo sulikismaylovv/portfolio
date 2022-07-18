@@ -1,0 +1,26 @@
+::before,::after{
+    box-sizing: border-box;
+}
+
+body{
+    
+    line-height: 1.5;
+    font-size: 16px;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    outline: none;
+    text-decoration: note;
+    box-sizing: border-box;
+}
+
+.aside{
+    width: 270px;
+    background-color: whitesmoke;
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 10;
+}
