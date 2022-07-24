@@ -1,77 +1,268 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
     <!-- #file links-->
-    <link rel = "stylesheet" href="style.css">
-    <link rel = "stylesheet" href="color-1.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="color-1.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
 </head>
+
 <body>
     <!-- Main start-->
-    <div class = "main-container">
+    <div class="main-container">
         <!--Aside-->
-        <div class="aside">
+        <div class="aside" id="aside">
             <div class="logo">
                 <a href="#"><span>A</span>tlas</a>
             </div>
-            <div class="nav_toggler">
+            <div class="nav_toggler" onclick="toggleAside()">
                 <span></span>
             </div>
             <ul class="navigation">
-                <li><a href="#" class="active">Home</a></li>
-                <li><a href="#">About me</a></li>
-                <li><a href="#">Projects</a></li>
+                <li><a href="#home" class="active">Home</a></li>
+                <li><a href="#about">About me</a></li>
+                <li><a href="#projects">Projects</a></li>
             </ul>
         </div>
         <!-- Home page-->
-        <div class="main-content">
-        <section class="home section hidden">
-            <div class="container">
-                <div class="row">
-                    <div class="info padd-15" >
-                        <h3 class="hello">Hello, my name is <span class="name">Suleyman Ismayilov</span></h3>
-                        <h3 class="short-intro">I am an upcoming <span class="typing">full-stack developer</span></h3>
-                        <p>I am a third year bachelors student at KU Leuven. An ambitious, sharp minded engineering student, I incessantly endeavor on multifarious learning adventures with the aim of not only broadening my personal horizons but also ultimately succeeding in what-is-to-become my professional field .</p>
-                        <p></p>
-                        <p>By now, I have completed 2 engineering-related internships in Baku, Azerbaijan , as well as ,1 in Ploesti, Romania.</p></p>
-                            
-                        <a href="#contact" class="btn about-me">More about me</a>
-                    </div> 
-                    <div class="home_img padd-15">
-                        <img src="image.JPG" alt="my image">
+        <div class="main-content" id="main">
+            <section class="home section" id="home">
+                <div class="container">
+                    <div class="row">
+                        <div class="info padd-15">
+                            <h3 class="hello">Hello, my name is <span class="name">Suleyman Ismayilov</span></h3>
+                            <h3 class="short-intro">I am an upcoming <span class="typing">full-stack developer</span>
+                            </h3>
+                            <p>I am a third year bachelors student at KU Leuven. An ambitious, sharp minded engineering
+                                student, I incessantly endeavor on multifarious learning adventures with the aim of not
+                                only broadening my personal horizons but also ultimately succeeding in what-is-to-become
+                                my professional field .</p>
+                            <p></p>
+                            <p>By now, I have completed 2 engineering-related internships: one in Baku, Azerbaijan and the other in Ploesti, Romania.</p>
+                            </p>
+
+                            <a href="#about" class="btn about-me">More about me</a>
+
+                        </div>
+                        <div class="home_img padd-15">
+                            <img src="image.JPG" alt="my image">
+                        </div>
                     </div>
                 </div>
-            </div>
-        </section>
-        </div>
-        <!--About me page-->
-        <section class="about section ">
-            <div class="container">
-                <div class="row">
-                    <div class="section-title padd-15">
-                        <h2>About me</h2>
-                    </div>
+            </section>
+            <!--About me page-->
+            <section class="about section" id="about">
+                <div class="container">
                     <div class="row">
-                        <div class="about-content padd-15">
-                            <div class="row">
-                                <div class="about-text">
-                                    <h3>My journey and experience as a <span>full-stack developer</span></h3>
-                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate tempore praesentium sed corporis earum adipisci? Blanditiis, velit quibusdam. At blanditiis enim inventore nostrum, quasi quo assumenda quod asperiores obcaecati facere!</p>
+                        <div class="section-title padd-15">
+                            <h2>About me</h2>
+                        </div>
+                        <div class="row">
+                            <div class="about-content padd-15">
+                                <div class="row">
+                                    <div class="about-text">
+                                        <h3>My journey and experience as a <span>full-stack developer</span></h3>
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate tempore
+                                            praesentium sed corporis earum adipisci? Blanditiis, velit quibusdam. At
+                                            blanditiis enim inventore nostrum, quasi quo assumenda quod asperiores
+                                            obcaecati facere!</p>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="personal-info padd-15">
+                                        <div class="row">
+                                            <div class="info-item padd-15">
+                                                <p>Birthday: <span>03 April 2003</span></p>
+                                            </div>
+                                            <div class="info-item padd-15">
+                                                <p>Age: <span>19</span></p>
+                                            </div>
+                                            <div class="info-item padd-15">
+                                                <p>Email: <span>suleymanismaylov01@gmail.com</span></p>
+                                            </div>
+                                            <div class="info-item padd-15">
+                                                <p>Education: <span>Bachelors</span></p>
+                                            </div>
+                                            <div class="info-item padd-15">
+                                                <p>Github: <span>https://github.com/sulikismaylovv/Projects</span></p>
+                                            </div>
+                                            <div class="info-item padd-15">
+                                                <p>LinkedIn: <span>https://www.linkedin.com/in/suleyman-ismayilov/</span></p>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="buttons padd-15">
+                                                <a href="CV.pdf" attributes-list download class="btn">Download CV</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="skills padd-15">
+                                        <ul class="row">
+                                            <li class="skill-item">
+                                                Java
+                                            </li>
+                                            <li class="skill-item">
+                                                Python(Object-Oriented)
+                                            </li>
+                                            <li class="skill-item">
+                                                SQL/T-SQL
+                                            </li>
+                                            <li class="skill-item">
+                                                JavaScript
+                                            </li>
+                                            <li class="skill-item">
+                                                CSS/HTML
+                                            </li>
+                                            <li class="skill-item">
+                                                Android Studion
+                                            </li>
+                                            <li class="skill-item">
+                                                SAP B1
+                                            </li>
+                                            <li class="skill-item">
+                                                Assembly
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="experience padd-15">
+                                        <h3 class="title">Experience</h3>
+                                        <div class="row">
+                                            <div class="timeline-box padd-15">
+                                                <div class="timeline shadow-dark">
+                                                    <!-- Timeline Items-->
+                                                    <div class="timeline-item">
+                                                        <div class="circle-dot"></div>
+                                                        <h3 class="timeline-date">
+                                                            <i class="fa fa-calendar"></i> July-September 2022
+                                                        </h3>
+                                                        <h4 class="timeline-title"> Internship at TP Engineering</h4>
+                                                        <p class="timeline-text">
+                                                            Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                                                            Veritatis ducimus consequuntur facilis recusandae velit
+                                                            eaque, soluta nihil officia vitae amet ipsam alias non
+                                                            libero assumenda esse?
+                                                        </p>
+                                                    </div>
+                                                    <div class="timeline-item">
+                                                        <div class="circle-dot"></div>
+                                                        <h3 class="timeline-date">
+                                                            <i class="fa fa-calendar"></i> May 2022
+                                                        </h3>
+                                                        <h4 class="timeline-title"> FrontEnd Development training at
+                                                            Brainnest</h4>
+                                                        <p class="timeline-text">
+                                                            I have completed the Brainnest frontend industry training of
+                                                            24 hours. During the training , I learned how to about
+                                                            responsive website design and gained a lot of insights in
+                                                            mplement websites, landing pages, and applications from
+                                                            concept through deployment, with a responsive, mobile-first
+                                                            approach
+                                                        </p>
+                                                    </div>
+                                                    <div class="timeline-item">
+                                                        <div class="circle-dot"></div>
+                                                        <h3 class="timeline-date">
+                                                            <i class="fa fa-calendar"></i> September 2022
+                                                        </h3>
+                                                        <h4 class="timeline-title"> Internship at TP Engineering
+                                                            Ploiesti</h4>
+                                                        <p class="timeline-text">
+                                                            During the internship, I was assigned with various tasks in
+                                                            “Project Planning and Logistics” department. My main
+                                                            responsibilities were sorting and parsing data in Excel as
+                                                            well as assisting in the technical drawings and blueprints
+                                                            preparation.
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="education padd-15">
+                                        <h3 class="title">Education</h3>
+                                        <div class="row">
+                                            <div class="timeline-box padd-15">
+                                                <div class="timeline shadow-dark">
+                                                    <!-- Timeline Items-->
+                                                    <div class="timeline-item">
+                                                        <div class="circle-dot"></div>
+                                                        <h3 class="timeline-date">
+                                                            <i class="fa fa-calendar"></i> 2020 - 2023
+                                                        </h3>
+                                                        <h4 class="timeline-title"> Bachelors in Engineering Technology
+                                                            (Faculty of Electronics and ICT)</h4>
+                                                        <p class="timeline-text">
+                                                            Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                                                            Veritatis ducimus consequuntur facilis recusandae velit
+                                                            eaque, soluta nihil officia vitae amet ipsam alias non
+                                                            libero assumenda esse?
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
-        </section>
-
+            </section>
+            <!--Projects Section-->
+            <section class="projects section" id="projects">
+                <div class="container">
+                    <div class="row">
+                        <div class="section-title padd-15">
+                            <h2>Projects</h2>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <!--Projects Items-->
+                        <div class="projects-item padd-15">
+                            <div class="projects-item-inner">
+                                <div class="icon" id="proj1">
+                                    <i class="fa fa-mobile-alt" onclick='window.location.href="http://google.com"' ></i>
+                                </div>
+                                <h4>Wordle Clone</h4>
+                                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Qui harum exercitationem vel aliquid in totam tenetur dicta autem? Blanditiis delectus tenetur soluta similique consectetur error nulla.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="projects-item padd-15">
+                            <div class="projects-item-inner">
+                                <div class="icon" id="proj2">
+                                    <i class="fa fa-gamepad"></i>
+                                </div>
+                                <h4>Games on Python and JavaScript</h4>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus esse id tempora labore quidem et porro! Cupiditate, blanditiis alias aliquid autem nostrum repudiandae maxime cum voluptate.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="projects-item padd-15">
+                            <div class="projects-item-inner">
+                                <div class="icon" id="proj3">
+                                    <i class="fa fa-robot"></i>
+                                </div>
+                                <h4>Chat Robot</h4>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus esse id tempora labore quidem et porro! Cupiditate, blanditiis alias aliquid autem nostrum repudiandae maxime cum voluptate.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
     </div>
-    
+
 
     <script src="script.js"></script>
 </body>
+
 </html>
